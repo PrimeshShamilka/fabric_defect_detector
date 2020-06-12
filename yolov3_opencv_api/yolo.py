@@ -2,16 +2,26 @@
 import numpy as np
 import argparse
 import time
-import cv2
+import cv2 # API requires OpenCV 3.4.2+
 import os
+
+
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
+
+# --image --> path to input image
 ap.add_argument("-i", "--image", required=True,
 	help="path to input image")
+
+# --yolo--> base path to the YOLO directory
 ap.add_argument("-y", "--yolo", required=True,
 	help="base path to YOLO directory")
+
+# --confidence --> Minimum probability to filter weak detections
 ap.add_argument("-c", "--confidence", type=float, default=0.5,
 	help="minimum probability to filter weak detections")
+
+# --threshold --> non-max suppression threshold
 ap.add_argument("-t", "--threshold", type=float, default=0.3,
 	help="threshold when applying non-maxima suppression")
 args = vars(ap.parse_args())
@@ -26,10 +36,12 @@ COLORS = np.random.randint(0, 255, size=(len(LABELS), 3),
 
 
 # derive the paths to the YOLO weights and model configuration
-weightsPath = os.path.sep.join([args["yolo"], "7.weights"])
-configPath = os.path.sep.join([args["yolo"], "7.cfg"])
+weightsPath = os.path.sep.join([args["yolo"], "model.weights"])
+configPath = os.path.sep.join([args["yolo"], "model.cfg"])
 # load our YOLO object detector trained on COCO dataset (80 classes)
 print("[INFO] loading YOLO from disk...")
+
+# OpenCV cv2.dnn.readNetFromDarknet function loads the model into the program
 net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
 
 
@@ -39,9 +51,11 @@ image = cv2.imread(args["image"])
 # determine only the *output* layer names that we need from YOLO
 ln = net.getLayerNames()
 ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
+
 # construct a blob from the input image and then perform a forward
 # pass of the YOLO object detector, giving us our bounding boxes and
 # associated probabilities
+
 blob = cv2.dnn.blobFromImage(image, 1 / 255.0, (416, 416),
 	swapRB=True, crop=False)
 net.setInput(blob)
