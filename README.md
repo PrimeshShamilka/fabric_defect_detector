@@ -25,34 +25,28 @@ We have introduced an autonomous fabric stain detection method is introduces usi
 
 ### Overall system design
 
-![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/mount.png)
+![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/Abstract.png)
 
-![]()
 
-### High Level computer vision pipeline of the system.
+## High Level computer vision pipeline of the system
 
-![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/architecture%20pipeline.jpeg)
+<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/architecture%20pipeline.jpeg" width="900">
 
-![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/nueral%20network%20architecture%20NEW.png)
+<img
+src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/nueral%20network%20architecture%20NEW.png" width="900">
+
 
 ## Why YOLO?
 
+![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/model_comparison.png)
 
-
-
-
-
-
-TILDA dataset was used as the reference dataset to develop, improve and validate the performance of the model. 
-
-
-
-
+![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/yolo_architecture.png)
 
 
 
 ## Stain defect detection results of TILDA dataset
 
+TILDA dataset was used as the reference dataset to develop, improve and validate the performance of the model. 
 
 
 ## Stain defect detection results of a custom dataset
