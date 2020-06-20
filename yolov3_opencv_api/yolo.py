@@ -67,6 +67,7 @@ print("[INFO] YOLO took {:.6f} seconds".format(end - start))
 
 # initialize our lists of detected bounding boxes, confidences, and
 # class IDs, respectively
+# remove repetitions
 boxes = []
 confidences = []
 classIDs = []
