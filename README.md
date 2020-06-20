@@ -17,17 +17,31 @@ We have introduced an autonomous fabric stain detection method is introduces usi
 
 ## Fabric types & Fabric defects
 
-// images
+![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/fabric_types.png)
+
+![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/stain_types.png)
 
 ## System Design
 
-// images
+### Overall system design
 
-The basic computer vision pipeline of our system is given below. 
+![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/mount.png)
 
-// architecture images
+![]()
+
+### High Level computer vision pipeline of the system.
+
+![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/architecture%20pipeline.jpeg)
+
+![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/nueral%20network%20architecture%20NEW.png)
 
 ## Why YOLO?
+
+
+
+
+
+
 
 TILDA dataset was used as the reference dataset to develop, improve and validate the performance of the model. 
 
