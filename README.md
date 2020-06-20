@@ -17,7 +17,11 @@ We have introduced an autonomous fabric stain detection method is introduces usi
 
 ## Fabric types & Fabric defects
 
+Uniform Textured materials of Polyster and Cotton fabrics are the fabric types that are considered in this project.
+
 ![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/fabric_types.png)
+
+Our study of fabric defects consider fabric stain defects. Mainly fabric stains can be categorized into 3 types namely, Ink stain, Dirt stain and Oil stain.
 
 ![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/stain_types.png)
 
