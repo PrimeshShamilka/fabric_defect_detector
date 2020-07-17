@@ -152,7 +152,7 @@ Implementing the stain detection model was carried out in a circular method. Imp
 
 In order to further validate the model on unseen data a custom stain dataset of 398 stain images and 68 defect_free images was created. This dataset is publically avaialble on kaggle under CC0:Public Domain Liscenece and you can download it from the link below.
 
-// datset link
+FABRIC STAIN DATASET - https://www.kaggle.com/priemshpathirana/fabric-stain-dataset
 
 ### Stain size distribution between the reference dataset and the custom dataset
 <img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/stain_size_distribution.png" width="600">
