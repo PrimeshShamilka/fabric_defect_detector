@@ -59,6 +59,7 @@ Basically, fabric materials can be categorized into two categories as Textured m
 - helper module scripts
 - other resource files for darknet framework
 
+<br/>
 
 ## SYSTEM DESIGN
 
@@ -70,24 +71,84 @@ Basically, fabric materials can be categorized into two categories as Textured m
 <img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/Abstract.png" width="400">
 
 
-## High Level computer vision pipeline of the system
-
-<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/architecture%20pipeline.jpeg" width="900">
-
-<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/nueral%20network%20architecture%20NEW.png" width="900">
 
 
-## Why YOLO?
+## STAIN DETECTION MODULE
 
-![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/model_comparison.png)
+Stain detection module consists of 4 sub modules,
+* Image acquisition module
+* Image preprocessing module
+* Feature extraction module
+* Stain localization & classification module
 
-![](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/yolo_architecture.png)
+// pipeline image
+
+We have used YOLO object detector to implement the feature extraction module and stain localization and classification module. YOLO uses a Deep Convolutional Nueral Network as the feature extractor. Architecture of the YOLOv3 object detector is given below.
+
+// YOLOv3 architecture
+
+<br/>
+
+## TRAINING THE STAIN DETECTION MODEL
+
+Implementing the stain detection model was carried out in a circular method. Implementing, Evaluating and Improving circular methodology was used to build the optimum model. According to the circular process 6 models were built and each successor model is an improved version of its predecessor. Reference dataset was used to evaluate each model and feedback from each model was used to improve its successor.  
+
+### Reference dataset - TILDA textile texture dataset
+
+* 8 different textile types
+* 7 error classes for each textile type
+* 50 TIF images for each class (768x512 pixel, graylevel image 8 bit)
+* 3200 TIF images in total
+* Stain images from TILDA dataset were used
+* 187 stain defect images
+* 151 defect free images
+
+### Learning curves
+
+// image
+
+
+### Model summary
+// image
+
+<br/>
+
+## TECHNIQUES USED TO IMPROVE MODEL ACCURACY
+
+### IMAGE PREPROCESSING 
+* Histogram analysis (Contrast Limited Adaptive Histogram Equalization - CLAHE)
+* Gaussian noise removal filtering
+* Standardizing image data
+* Resizing images
+* Image augmentation
+
+### BIAS & VARIANCE TRADE-OFF ANALYSIS
+* TRAIN/VALID/TEST SPLIT (70%,15%,15%)
+* Reducing underfitting & overfitting (low bias & low variance)
+
+### HYPERPARAMETER TUNING
+* Learning rate
+* No. of iterations
+* Input resolution
+* Optimization algorithm 
+* Batch size
+
+### USING DIFFERENT MODEL ARCHITECTURES
+* YOLOv3 
+* YOLOv3 - tiny - 3 yolo layers
+* YOLOv3_5l - 5 yolo layers
+* YOLOv3-spp - with spatial pyramid pooling
+* YOLOv4 - 3 yolo layers
+
+<br/>
+
+## VALIDATING THE MODEL USING A CUSTOM DATASET
 
 
 
-## Stain defect detection results of TILDA dataset
 
-TILDA dataset was used as the reference dataset to develop, improve and validate the performance of the model. 
+
+
 
 
 ## Stain defect detection results of a custom dataset
