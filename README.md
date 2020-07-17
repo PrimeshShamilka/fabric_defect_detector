@@ -70,7 +70,7 @@ Basically, fabric materials can be categorized into two categories as Textured m
 ### State chart diagram
 <img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/Abstract.png" width="400">
 
-
+<br/>
 
 
 ## STAIN DETECTION MODULE
@@ -144,14 +144,34 @@ Implementing the stain detection model was carried out in a circular method. Imp
 
 ## VALIDATING THE MODEL USING A CUSTOM DATASET
 
+In order to further validate the model on unseen data a custom stain dataset of 398 stain images and 68 defect_free images was created. This dataset is publically avaialble on kaggle under CC0:Public Domain Liscenece and you can download it from the link below.
+
+// datset link
+
+### Stain size distribution between the reference dataset and the custom dataset
+
+
+Dataset was preprocessed using the preprocessing model. Model was trained on the custom dataset in 3 approaches and the optimum approach was selected for further improvements.
+
+// approaches image
+
+<br/>
+
+
+## DIMENSION CLUSTERING OF TARGET FRAMES TO DETERMINE THE SIZE AND NUMBER OF ANCHOR BOXES(PRIOR BOXES)
+
+To further improve the accuracy of the model on the custom dataset cluster analysis was done usin K-mean clustering algorithm to find out the optimum sizes and number of anchor boxes for YOLOv3 object detector. 
+
+// cluster analysis image
+
+
+## RESULTS
 
 
 
 
 
 
-
-## Stain defect detection results of a custom dataset
 
 
 
