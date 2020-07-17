@@ -4,10 +4,10 @@ import numpy as np
 # root_dir should include test, train, valid folders (each folder having all the classes as folders)
 # test.txt, train.txt, valid.txt files will be saved into dst_dir
 
-root_dir = '/media/primesh/F4D0EA80D0EA4906/PROJECTS/Automation_challenge3/Datasets/FabricDefectDetector_datasets/dataset7'
+root_dir = '/media/primesh/F4D0EA80D0EA4906/PROJECTS/Automation_challenge3/Datasets/FabricDefectDetector_datasets/dataset5_2'
 dst_dir = root_dir
 
-folder = 'valid'
+folder = 'train'
 dst_file = dst_dir + '/' + folder + '.txt'
 classes = ['stain','defect_free']
 
