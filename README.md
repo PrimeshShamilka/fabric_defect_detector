@@ -192,6 +192,12 @@ To further improve the accuracy of the model on the custom dataset cluster analy
 
 ## REFERENCES
 
+- Ajay Kumar, “Computer Vision-Based Fabric Defect Detection: A Survey” , Jan 2001
+- Hong-wei Zhang , Ling-jie Zhang , Peng-fei Li , De Gu, “Yarn-dyed Fabric Defect Detection with YOLOV2 Based on Deep Convolutional Neural Networks”, Xi'an Polytechnic University, May 2018
+- Junfeng Jing , Dong Zhuo, Huanhuan Zhang, Yong Liang and Min Zheng, “Fabric defect detection using the improved YOLOv3 model”, Jan 2020
+- Jun-Feng Jing, Hao Ma and Huan-Huan Zhang, “Automatic fabric defect detection using a deep convolutional neural network”, School of Electronics and Information, Xi’an Polytechnic University, Feb 2019
+- Joseph Redmon, Ali Farhadi, “YOLOv3: An Incremental Improvement”, University of Washington
+- Cihat Okan Arıkan, “Developing an Intelligent Automation and Reporting System for Fabric Inspection Machines”,Ege University, Department of Textile Engineering, 2019
 
 
 
