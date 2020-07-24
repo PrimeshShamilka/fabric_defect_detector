@@ -40,7 +40,7 @@ Basically, fabric materials can be categorized into two categories as Textured m
 * Concentration time of a quality control employee is limited to 20-30 minutes
 * Only 10% of the rolls are inspected
 
-// manual inspection image
+<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/motivation.png" width="400">
 
 <br/>
 
@@ -64,8 +64,12 @@ Basically, fabric materials can be categorized into two categories as Textured m
 ## SYSTEM DESIGN
 
 ### Abstract view of the system
+<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/mount.png" width="400">
+
 
 ### Architecture of a typical web inspection system
+<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/architecture_typical_design.png" width="400">
+
 
 ### State chart diagram
 <img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/Abstract.png" width="400">
@@ -81,11 +85,11 @@ Stain detection module consists of 4 sub modules,
 * Feature extraction module
 * Stain localization & classification module
 
-// pipeline image
+<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/computer_vision_pipeline.png" width="600">
 
 We have used YOLO object detector to implement the feature extraction module and stain localization and classification module. YOLO uses a Deep Convolutional Nueral Network as the feature extractor. Architecture of the YOLOv3 object detector is given below.
 
-// YOLOv3 architecture
+<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/yolo_archi.png" width="600">
 
 <br/>
 
@@ -105,11 +109,13 @@ Implementing the stain detection model was carried out in a circular method. Imp
 
 ### Learning curves
 
-// image
+<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/learning_curves.png" width="600">
+
 
 
 ### Model summary
-// image
+<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/model_summary.png" width="600">
+
 
 <br/>
 
@@ -146,14 +152,16 @@ Implementing the stain detection model was carried out in a circular method. Imp
 
 In order to further validate the model on unseen data a custom stain dataset of 398 stain images and 68 defect_free images was created. This dataset is publically avaialble on kaggle under CC0:Public Domain Liscenece and you can download it from the link below.
 
-// datset link
+FABRIC STAIN DATASET - https://www.kaggle.com/priemshpathirana/fabric-stain-dataset
 
 ### Stain size distribution between the reference dataset and the custom dataset
+<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/stain_size_distribution.png" width="600">
 
 
 Dataset was preprocessed using the preprocessing model. Model was trained on the custom dataset in 3 approaches and the optimum approach was selected for further improvements.
 
-// approaches image
+<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/custom_dataset_approach.png" width="600">
+
 
 <br/>
 
@@ -162,7 +170,7 @@ Dataset was preprocessed using the preprocessing model. Model was trained on the
 
 To further improve the accuracy of the model on the custom dataset cluster analysis was done usin K-mean clustering algorithm to find out the optimum sizes and number of anchor boxes for YOLOv3 object detector. 
 
-// cluster analysis image
+<img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Design/Average%20IoU%20vs.%20Number%20of%20clusters.png" width="400">
 
 
 ## RESULTS
@@ -184,6 +192,12 @@ To further improve the accuracy of the model on the custom dataset cluster analy
 
 ## REFERENCES
 
+- Ajay Kumar, “Computer Vision-Based Fabric Defect Detection: A Survey” , Jan 2001
+- Hong-wei Zhang , Ling-jie Zhang , Peng-fei Li , De Gu, “Yarn-dyed Fabric Defect Detection with YOLOV2 Based on Deep Convolutional Neural Networks”, Xi'an Polytechnic University, May 2018
+- Junfeng Jing , Dong Zhuo, Huanhuan Zhang, Yong Liang and Min Zheng, “Fabric defect detection using the improved YOLOv3 model”, Jan 2020
+- Jun-Feng Jing, Hao Ma and Huan-Huan Zhang, “Automatic fabric defect detection using a deep convolutional neural network”, School of Electronics and Information, Xi’an Polytechnic University, Feb 2019
+- Joseph Redmon, Ali Farhadi, “YOLOv3: An Incremental Improvement”, University of Washington
+- Cihat Okan Arıkan, “Developing an Intelligent Automation and Reporting System for Fabric Inspection Machines”,Ege University, Department of Textile Engineering, 2019
 
 
 
