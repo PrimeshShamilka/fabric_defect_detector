@@ -12,7 +12,7 @@
 - [7. Validating the model using a custom dataset](https://github.com/PrimeshShamilka/fabric_defect_detector#validating-the-model-using-a-custom-dataset)
 - [8. Dimension clustering of target frames to determine the size and number of anchor boxes](https://github.com/PrimeshShamilka/fabric_defect_detector#dimension-clustering-of-target-frames-to-determine-the-size-and-number-of-anchor-boxesprior-boxes)
 - [9. Results](https://github.com/PrimeshShamilka/fabric_defect_detector#results)
-- [10.References](https://github.com/PrimeshShamilka/fabric_defect_detector#references)
+- [10. References](https://github.com/PrimeshShamilka/fabric_defect_detector#references)
 
 ## DEMO
 
