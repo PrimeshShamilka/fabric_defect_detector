@@ -2,7 +2,7 @@
 
 ## CONTENTS
 
-- [Demo]()
+- [Demo](https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/README.md#demo)
 - [1. Problem definition](https://github.com/PrimeshShamilka/fabric_defect_detector#problem)
 - [2. Proposed solution](https://github.com/PrimeshShamilka/fabric_defect_detector#our-solution)
 - [3. System design](https://github.com/PrimeshShamilka/fabric_defect_detector#system-design)
