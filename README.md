@@ -14,8 +14,42 @@
 - [9. Results](https://github.com/PrimeshShamilka/fabric_defect_detector#results)
 - [10. References](https://github.com/PrimeshShamilka/fabric_defect_detector#references)
 
+<br/>
+
 ## DEMO
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=WDOfIpKW65c
+" target="_blank"><img src="http://img.youtube.com/vi/WDOfIpKW65c/0.jpg" 
+alt="" width="480" height="360" border="1" /></a>
+
+<br/>
+
+### How to run?
+
+#### For Linux 
+
+- Run the following commands in a terminal
+
+```
+   git clone https://github.com/AlexeyAB/darknet.git
+   cd darknet
+   make
+```
+
+- Donwload the configuration file of the model from the link below and copy it to cfg directory inside darknet root directory
+
+- Download obj.data, classes.names files from the link below and copy them to data directory inside darknet root directory
+
+- Download the trained weight file for the model from the link below and copy the weights to backup directory inside darknet root directory
+
+- Test on a video feed
+
+``` 
+  ./darknet detector demo data/obj.data cfg/yolov3.cfg backup/stain_detection_model.weights test.mp4 
+```
+
+
+<br/>
 
 ## PROBLEM
 
