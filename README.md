@@ -2,17 +2,20 @@
 
 ## CONTENTS
 
-[Demo]()\
-[1. Problem definition](https://github.com/PrimeshShamilka/fabric_defect_detector#problem)\
-[2. Proposed solution](https://github.com/PrimeshShamilka/fabric_defect_detector#our-solution)\
-[3. System design](https://github.com/PrimeshShamilka/fabric_defect_detector#system-design)\
-[4. Stain detection module](https://github.com/PrimeshShamilka/fabric_defect_detector#stain-detection-module)\
-[5. Training the model](https://github.com/PrimeshShamilka/fabric_defect_detector#training-the-stain-detection-model)\
-[6. Techniques used to improve the model accuracy](https://github.com/PrimeshShamilka/fabric_defect_detector#techniques-used-to-improve-model-accuracy)\
-[7. Validating the model using a custom dataset](https://github.com/PrimeshShamilka/fabric_defect_detector#validating-the-model-using-a-custom-dataset)\
-[8. Dimension clustering of target frames to determine the size and number of anchor boxes](https://github.com/PrimeshShamilka/fabric_defect_detector#dimension-clustering-of-target-frames-to-determine-the-size-and-number-of-anchor-boxesprior-boxes)\
-[9. Results](https://github.com/PrimeshShamilka/fabric_defect_detector#results)\
-[10.References](https://github.com/PrimeshShamilka/fabric_defect_detector#references)
+- [Demo]()
+- [1. Problem definition](https://github.com/PrimeshShamilka/fabric_defect_detector#problem)
+- [2. Proposed solution](https://github.com/PrimeshShamilka/fabric_defect_detector#our-solution)
+- [3. System design](https://github.com/PrimeshShamilka/fabric_defect_detector#system-design)
+- [4. Stain detection module](https://github.com/PrimeshShamilka/fabric_defect_detector#stain-detection-module)
+- [5. Training the model](https://github.com/PrimeshShamilka/fabric_defect_detector#training-the-stain-detection-model)
+- [6. Techniques used to improve the model accuracy](https://github.com/PrimeshShamilka/fabric_defect_detector#techniques-used-to-improve-model-accuracy)
+- [7. Validating the model using a custom dataset](https://github.com/PrimeshShamilka/fabric_defect_detector#validating-the-model-using-a-custom-dataset)
+- [8. Dimension clustering of target frames to determine the size and number of anchor boxes](https://github.com/PrimeshShamilka/fabric_defect_detector#dimension-clustering-of-target-frames-to-determine-the-size-and-number-of-anchor-boxesprior-boxes)
+- [9. Results](https://github.com/PrimeshShamilka/fabric_defect_detector#results)
+- [10.References](https://github.com/PrimeshShamilka/fabric_defect_detector#references)
+
+## DEMO
+
 
 ## PROBLEM
 
