@@ -37,10 +37,14 @@ alt="" width="480" height="360" border="1" /></a>
 ```
 
 - Donwload the configuration file of the model from the link below and copy it to cfg directory inside darknet root directory
-
-- Download obj.data, classes.names files from the link below and copy them to data directory inside darknet root directory
+  https://drive.google.com/file/d/12ikV938ZEXWjoITYW6mE0FqoZQbyET1v/view?usp=sharing
+  
+- Download obj.data, classes.names files from the links below and copy them to data directory inside darknet root directory
+  obj.data file - https://drive.google.com/file/d/1B54Q4VQjlHVkLoQb132EgBjyEJ0lJ0yy/view?usp=sharing \
+  classes.names file - https://drive.google.com/file/d/1WBVQI6e0p7TQtTExXbRUcwaG5N9A9xwL/view?usp=sharing
 
 - Download the trained weight file for the model from the link below and copy the weights to backup directory inside darknet root directory
+  https://drive.google.com/file/d/18GULkIGA2Qpg4rfYbp2moGaZLoxtjuAw/view?usp=sharing
 
 - Test on a video feed
 
