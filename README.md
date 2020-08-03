@@ -233,9 +233,6 @@ To further improve the accuracy of the model on the custom dataset cluster analy
 <img src="https://github.com/PrimeshShamilka/fabric_defect_detector/blob/master/images/Results/overall_results.png" width="600">
 
 
-## YOLOv3 OpenCV python API documentation
-
-
 ## REFERENCES
 
 - Ajay Kumar, “Computer Vision-Based Fabric Defect Detection: A Survey” , Jan 2001
