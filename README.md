@@ -49,7 +49,7 @@ alt="" width="480" height="360" border="1" /></a>
 - Test on a video feed
 
 ``` 
-  ./darknet detector demo data/obj.data cfg/yolov3.cfg backup/stain_detection_model.weights test.mp4 
+  ./darknet detector demo data/obj.data cfg/custom.cfg backup/stain_detection_model.weights test.mp4 
 ```
 
 
